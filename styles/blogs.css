@@ -1,0 +1,108 @@
+/* For everything larger than phones */
+.blogPostsList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template:
+            "blog1 blog2"
+            "blog3 blog4";
+}
+
+/*For phones*/
+@media (max-width: 700px) {
+    .blogPostsList {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(100px, auto);
+        grid-template:
+                "blog1"
+                "blog2"
+                "blog3"
+                "blog4";
+    }
+}
+
+header {
+    grid-area: header;
+}
+
+a{
+font-style: italic;
+background-color: rgb(228, 228, 228);
+box-shadow: 2px 5px 5px rgb(119, 119, 119);
+}
+
+.blogPostLink {
+    background-size: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    border: 2px solid rgb(82, 82, 82);
+    box-shadow: 5px 5px rgb(82, 82, 82);
+}
+
+#blog1 {
+    background-image: url("/img/art1.png");
+    grid-area: blog1;
+}
+
+#blog2 {
+    background-image: url("/img/art2.png");
+    grid-area: blog2;
+}
+
+#blog3 {
+    background-image: url("/img/art3.png");
+    grid-area: blog3;
+}
+
+#blog4 {
+    background-image: url("/img/art4.png");
+    grid-area: blog4;
+}
+
+.Button {
+    position: relative;
+    left: 0;
+    bottom: auto;
+    box-shadow: 5px 5px rgb(82, 82, 82);
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    background: rgb(175, 175, 175);
+    border-color: rgb(204, 204, 204);
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding:5px
+}
+
+#lastParagraph {
+    display: flex;
+    flex-flow: row;
+    height: 90px;
+}
+
+#theMayhem{
+    width: 400px;
+}
+
+b, strong {
+    color:red
+}
+
+i, em {
+    color:blueviolet
+}
+
+u { 
+    color:rgb(166, 255, 0)
+}

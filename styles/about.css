@@ -1,0 +1,45 @@
+* {
+    text-align: justify;
+}
+
+body {
+    background: rgb(199, 199, 199);
+    font-family: Nunito
+}
+h1 {
+    background: rgb(175, 175, 175);
+    font-family: Prosto One
+}
+div {
+    background: rgb(175, 175, 175);
+    border-color: rgb(204, 204, 204);
+    border-style:groove
+}
+footer {
+    background: rgb(175, 175, 175);
+    border-color: rgb(204, 204, 204);
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding:5px
+}
+img {
+    background: rgb(175, 175, 175);
+    border:4px;
+    border-color: rgb(146, 146, 146);
+    border-style:groove;
+}
+
+b, strong {
+    color:red
+}
+
+i, em {
+    color:blueviolet
+}
+
+u { 
+    color:rgb(166, 255, 0)
+}
